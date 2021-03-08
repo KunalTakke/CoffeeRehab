@@ -1,0 +1,23 @@
+{% extends 'coffee/base.html' %}
+{% load static %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> {% endblock %}
+{% block title %}Home{% endblock %}
+{% block nav_item_home %}active{% endblock nav_item_home %}
+{% block body %}
+<!-- MAIN PAGE -->
+<div class="container d-flex align-items-center h-100">
+    <div class="row">
+      <header class="text-center col-12">
+        <h1><strong>Awake your dreams with a cup of coffee !</strong></h1>
+  </header>
+  <div class="buffer col-12">
+    
+  </div>
+  <section class="text-center col-12">
+    <a href="/coffee/menu">
+  <button class="btn btn-primary btn-xl">Get Set Coffee<span></span><i class="fas fa-coffee"></i></button>
+    </a>
+  </section>
+  </div>
+</div>
+{% endblock %}

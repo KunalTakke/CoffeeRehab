@@ -1,0 +1,141 @@
+body,html{
+    padding: 0;
+    margin:0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: rgba(248,248,248,0.938);
+  }
+  
+  /*background image*/
+  #fancy-form{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://wallpaperaccess.com/full/1595970.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  /*container utility*/
+  #fancy-form .container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+  }
+  /*main div*/
+  .form-section{
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2,1fr);
+  }
+  /*form left styling*/
+  .form-left h1{
+    color: #fff;
+    padding: 0;
+    margin:0;
+  }
+  .form-left h4{
+    padding:0;
+    margin:0;
+    color: rgb(243,235,235);
+  }
+  .line{
+    border-bottom: 2px solid rgb(12,168,207);
+    width: 8%;
+    marker-left:0;
+  }
+  .form-left span{
+    color: rgb(187,182,182);
+    font-weight: bold;
+  }
+  .form-left hr{
+    width: 25rem;
+    margin-left: 0;
+    border:1px solid rgb(53,53,52);
+  }
+  /*social media icons styling*/
+  .fa{
+    padding: 8px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(187,182,182);
+  }
+  .fa:hover{
+    color: rgb(16,135,190);
+  }
+  /*form-right styling*/
+  .form-right h1{
+    color: #fff;
+    padding: 0;
+    margin:0;
+  }
+  form{
+    padding-top:2rem;
+  }
+  form h5{
+    padding: 0;
+    margin:0;
+    color:rgb(228,218,218);
+  }
+  form input{
+    padding: 0.6rem;
+    width: 27rem;
+    border:none;
+    background-color:rgba(136,133,133,0.3);
+    color: #fff;
+    outline: none;
+    border:none;
+  }
+  form textarea{
+    padding: 0.6rem;
+    width: 27rem;
+    border:none;
+    background-color:rgba(136,133,133,0.3);
+    color: #fff;
+    outline: none;
+    border:none;
+  }
+  form button{
+    width: 9rem;
+    background-color: rgb(12,168,207);
+    padding: 5px;
+    outline:none;
+    border-color:transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  /*margin queries*/
+  @media (max-width: 968px){
+    #fancy-form .form-section{
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    /*background image*/
+    #fancy-form{
+      background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://wallpaperaccess.com/full/1595970.jpg);
+      background-size: cover;
+      background-position: center;
+      height: auto;
+      width: 100%;
+    }
+    .form-section .form-right{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    /* social media icons*/
+    .fa{
+      padding: 8px;
+      font-size: 18px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      color: rgb(187,182,182);
+    }
+  }

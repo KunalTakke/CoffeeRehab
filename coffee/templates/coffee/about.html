@@ -1,0 +1,43 @@
+{% extends 'coffee/base.html' %}
+{% load static %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'about.css' %}"> {% endblock %}
+{% block title %}About{% endblock %}
+{% block nav_item_about %}active{% endblock nav_item_about %}
+{% block body %} 
+
+<!-- Wrapper class for About page -->
+    <div class="wrapper">
+      <div class="section">
+        <div class="left-section">
+          <div class="content">
+            <div class="title">
+              <h2>About</h2>
+              <h3><em>For the love of Coffee we put in and the love you give us !</em></h3>
+            </div>
+            <p>Coffee Rehab is dedicated to provide delicious and refreshing coffee experience to it’s customers especially the
+             teenagers to hangout along with their friends and family in the café with no compromised service and also to provide
+              refreshing coffee experience within the comfort of their home. Our speciality is that we provide different types of 
+              coffee that originates nationally and internationally from our world-class trained baristas that are experts in making coffee
+               that not only tastes great but also gives you experience of refreshment and rebirth. Coffee Rehab an ideal place for a coffee-lover
+                to sit back have a nice cup of coffee and do their work, meetings etc, and a place where non coffee-lovers can become a 
+                coffee-lover. Coffee-Rehab consists of all the various types of coffees for all moods and for all the age group people. 
+                It also offers ordering the coffee’s online and then a take-a-way from the store</p>
+            <div class="button">
+              <a href="#">Read More</a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      <div class="image-section">
+        <img src="https://www.afteronline.com.au/wp-content/uploads/2020/01/1.jpeg">
+      </div>
+      </div>
+    </div>
+    {% endblock %}
+
+
+    

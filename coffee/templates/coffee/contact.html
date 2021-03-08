@@ -1,0 +1,54 @@
+{% extends 'coffee/base.html' %}
+{% load static %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'contact.css' %}"> {% endblock %}
+{% block title %}Contact{% endblock %}
+{% block nav_item_contact %}active{% endblock nav_item_contact %}
+{% block body %}
+<!-- Contact  -->
+  <section id="fancy-form">
+    <div class="container">
+      <div class="form-section">
+        <div class="form-left">
+          <h1>Get In Touch</h1>
+          <div class="line"></div>
+          <p>Contact Us for latest news and updates.</p>
+          <!-- first heading -->
+          <h4>ADDRESS</h4>
+          <span>Versova Link Rd,Andheri West ,Mumbai</span>
+          <hr><br><br>
+          <!-- Second Heading -->
+          <h4>PHONE</h4>
+          <span>022-23516921</span>
+          <hr><br><br>
+          <!-- Third Heading -->
+          <h4>EMAIL</h4>
+          <span>rehab@gmail.com</span>
+          <hr><br>
+          <!-- Social media icons -->
+          <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+          <a href="https://twitter.com/?lang=en" class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+          <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+          </div>
+          <!-- form right -->
+          <div class="form-right">
+            <h1>Contact Us</h1>
+          <div class="line"></div>
+          <!-- form -->
+          <form action="/coffee/contact/" method="post">{% csrf_token %}
+          <h5>NAME</h5>
+          <input type="text" name="name"><br><br>
+          <h5>EMAIL</h5>
+          <input type="text" name="email"><br><br>
+          <h5>PHONE</h5>
+          <input type="text" name="phone"><br><br>
+          <h5>YOUR MESSAGE</h5>
+          <textarea name="msg" id="" cols="50" rows="7"></textarea><br>
+          <button type="submit">Send</button>
+          </form>
+          </div>
+      </div>
+    </div>
+  </section> 
+  {% endblock %}
+  

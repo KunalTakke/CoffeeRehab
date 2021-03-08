@@ -1,0 +1,32 @@
+{% extends 'coffee/base.html' %}
+{% load static %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'menu.css' %}"> {% endblock %}
+{% block title %}Menu{% endblock %}
+{% block nav_item_menu %}active{% endblock nav_item_menu %}
+{% block body %}
+    <!-- Heading -->
+    <div class="heading">
+    <h1>Menu</h1>
+    <hr>
+    </div>
+    <!-- Card for Menu -->
+    <div class="container">
+      
+      <main class="grid">
+        {% for product in product %}
+        <!-- 1 -->
+        <article>
+          <img src="/media/{{ product.image }}" alt="sample photo">
+          <div class="text">
+            <h3>{{ product.product_name }}</h3>
+            
+            <p>{{ product.desc }}</p>
+            <button>Buy Now</button>
+          </div>
+          
+        </article>
+        {% endfor %}
+        
+    </div>
+    {% endblock %}
+    

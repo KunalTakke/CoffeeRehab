@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body,html{
+	background-image: url(https://images.pexels.com/photos/4109748/pexels-photo-4109748.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-4109748.jpg&fm=jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.wrapper{
+	width: 100%;
+	/*background-color: #ddd;*/
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.section{
+	width: 90%;
+	display: block;
+	margin: 80px auto;
+}
+
+.left-section{
+	width: 60%;
+	float: left;
+	padding-right: 50px;
+}
+.content{
+	text-align: justify;
+}
+
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	max-width: 100%;
+	height: auto;
+}
+
+.content .title h2{
+	/*color: #1c1c1c;*/
+	font-family: sans-serif;
+	font-weight: 800;
+}
+.content .title h3{
+	padding-top: 15px;
+	color: #8e8e8e;
+	font-family: sans-serif;
+	font-weight: 800;
+}
+.content p{
+	font-family: sans-serif;
+	padding-top: 15px;
+	/*color: #1e1e1e;*/
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.content .button{
+	padding-top: 40px;
+}
+.content .button *{
+	text-decoration:none;
+	padding:10px 20px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #1bb1dc;
+	letter-spacing: 1px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+.content .button a:hover{
+	background-color: #0a98c0;
+	transition: 2s ease;
+	color: #fff;
+}
+.content .social{
+	padding-top: 40px;
+}
+.content .social *{
+	color: #cd2d35;
+	font-size: 24px;
+	padding:0px 5px;
+}
+h2,h3,p{
+	color: white;
+}
+@media screen and (max-width: 768px){
+	.left-section{
+		width: 100%;
+		padding-right: 0px;
+	}
+	.content h2{
+		text-align: center;
+	}
+	.content .button{
+		text-align: center;
+	}
+	.content .social{
+		text-align: center;
+	}
+	.image-section{
+		 width: 100%;
+		 display: block;
+		 margin:50px auto;
+	}
+	.img-section img{
+		width: 100%;
+	} 
+}
